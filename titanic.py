@@ -8,7 +8,7 @@ Created on Mon Oct 21 20:28:03 2024
 import numpy as np
 import pickle
 import streamlit as st
-loaded_model = pickle.load(open(r"C:\Users\HP\Desktop\titanic_model.sav",'rb'))
+loaded_model = pickle.load(open("titanic_model.sav",'rb'))
 
 def survival_prediction(input_data):
     input_data_as_numpy_array = np.asarray(input_data)
